@@ -30,7 +30,7 @@ enum Keys: String, CaseIterable {
     case tree = "3"
     case add = "+"
     
-    case nightLight = "☾"
+    case beep = "🎵"
     case zero = "0"
     case point = "."
     case equal = "="
@@ -38,8 +38,8 @@ enum Keys: String, CaseIterable {
     func getBackground() -> Color {
         switch self {
             
-        case .nightLight:
-            return .black
+        case .beep:
+            return .cyan
             
         case .c:
                 return .orange

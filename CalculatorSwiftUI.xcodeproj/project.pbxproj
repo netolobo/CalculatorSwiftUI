@@ -13,6 +13,8 @@
 		5AA87BF42B122FA600401B02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA87BF32B122FA600401B02 /* Preview Assets.xcassets */; };
 		5AA87BFE2B12383100401B02 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA87BFD2B12383100401B02 /* Keys.swift */; };
 		5AA87C002B12426200401B02 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA87BFF2B12426200401B02 /* CalculatorViewModel.swift */; };
+		5AF0FB782B14381F00E235A0 /* Calculator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AF0FB772B14381F00E235A0 /* Calculator.ttf */; };
+		5AF0FB7D2B1441C600E235A0 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AF0FB7C2B1441C600E235A0 /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		5AA87BF32B122FA600401B02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AA87BFD2B12383100401B02 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		5AA87BFF2B12426200401B02 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		5AF0FB772B14381F00E235A0 /* Calculator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calculator.ttf; sourceTree = "<group>"; };
+		5AF0FB792B14385300E235A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5AF0FB7C2B1441C600E235A0 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,9 @@
 		5AA87BEB2B122FA300401B02 /* CalculatorSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5AF0FB7C2B1441C600E235A0 /* beep.mp3 */,
+				5AF0FB792B14385300E235A0 /* Info.plist */,
+				5AF0FB772B14381F00E235A0 /* Calculator.ttf */,
 				5AA87BEC2B122FA300401B02 /* CalculatorSwiftUIApp.swift */,
 				5AA87BFB2B1237C200401B02 /* Model */,
 				5AA87BFA2B1237B600401B02 /* View */,
@@ -155,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF0FB7D2B1441C600E235A0 /* beep.mp3 in Resources */,
+				5AF0FB782B14381F00E235A0 /* Calculator.ttf in Resources */,
 				5AA87BF42B122FA600401B02 /* Preview Assets.xcassets in Resources */,
 				5AA87BF12B122FA600401B02 /* Assets.xcassets in Resources */,
 			);
@@ -306,6 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CalculatorSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalculatorSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +345,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CalculatorSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalculatorSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
