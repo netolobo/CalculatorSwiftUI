@@ -10,8 +10,6 @@ import AVFoundation
 
 struct CalculatorView: View {
     @State var viewModel = CalculatorViewModel()
-    @State var audioPlayer: AVAudioPlayer?
-    @State var isBeepOn = true
     
     let gridItems = [
            GridItem(.flexible()),
@@ -25,7 +23,7 @@ struct CalculatorView: View {
     var body: some View {
         ZStack {
             VStack {
-                Text("0")
+                Text(viewModel.display)
                     .frame(height: 90)
                     .frame(maxWidth: .infinity)
                     .font(.custom("Calculator", size: 60))
@@ -42,14 +40,16 @@ struct CalculatorView: View {
                             
                             
                             if key == Keys.beep {
-                                isBeepOn.toggle()
+                                viewModel.isBeepOn.toggle()
                             }
                             
-                            if isBeepOn {
+                            if viewModel.isBeepOn {
                                 Task {
                                     await playSound()
                                 }
                             }
+                            
+                            viewModel.buttonClick(key: key)
                             
                          
                             
@@ -78,8 +78,8 @@ struct CalculatorView: View {
             }
 
             do {
-                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-                audioPlayer?.play()
+                viewModel.audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                viewModel.audioPlayer?.play()
             } catch {
                 print("Error playing sound: \(error.localizedDescription)")
             }

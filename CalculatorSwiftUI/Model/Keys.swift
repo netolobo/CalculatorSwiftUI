@@ -18,7 +18,7 @@ enum Keys: String, CaseIterable {
     case seven = "7"
     case eight = "8"
     case nive = "9"
-    case mutiply = "X"
+    case multiply = "X"
     
     case four = "4"
     case five = "5"
@@ -27,7 +27,7 @@ enum Keys: String, CaseIterable {
     
     case one = "1"
     case two = "2"
-    case tree = "3"
+    case three = "3"
     case add = "+"
     
     case beep = "🎵"
@@ -53,7 +53,7 @@ enum Keys: String, CaseIterable {
             return .gray
         case .two:
             return .gray
-        case .tree:
+        case .three:
             return .gray
         case .four:
             return .gray
@@ -79,7 +79,7 @@ enum Keys: String, CaseIterable {
             return .mint
         case .add:
             return .mint
-        case .mutiply:
+        case .multiply:
             return .mint
         
         default://equals
