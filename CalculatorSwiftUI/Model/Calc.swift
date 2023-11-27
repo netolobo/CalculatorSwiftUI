@@ -220,6 +220,8 @@ struct Calc {
         case Keys.positiveNegative:
             negativePositive()
             break
+        case Keys.beep:
+            break
         default:
             aC()
             break

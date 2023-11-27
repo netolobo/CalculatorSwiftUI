@@ -8,20 +8,22 @@
 import Foundation
 
 struct K {
+    static let appName = "RetroCalc"
+    
     //display
     static let dot = "."
     static let error = "Error"
     static let zed = "0"
     static let maximumDecimalDigits = 10
 
+    
+    //audio
+    static let audioExtension = "mp3"
+    static let audioName = "bee"
 
-    //symbols
-    static let displayPoint = 10
-    static let equal = 11
-    static let add = 12
-    static let subtract = 13
-    static let multiply = 14
-    static let divide = 15
-    static let percent = 16
-    static let positiveNegative = 17
+    //Display font
+    static let customFontName = "Calculator"
+    
+    
+    // Sound Effect by <a href="https://pixabay.com/users/edr-1177074/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=8333">EdR</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=8333">Pixabay</a>
 }

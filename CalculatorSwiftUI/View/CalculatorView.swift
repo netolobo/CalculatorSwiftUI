@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AVFoundation
+import AVFAudio
 
 struct CalculatorView: View {
     @State var viewModel = CalculatorViewModel()
@@ -17,76 +17,54 @@ struct CalculatorView: View {
            GridItem(.flexible()),
            GridItem(.flexible())
     ]
-    
 
-    
     var body: some View {
-        ZStack {
-            VStack {
-                Text(viewModel.display)
-                    .frame(height: 90)
-                    .frame(maxWidth: .infinity)
-                    .font(.custom("Calculator", size: 60))
-                    .fontWeight(.black)
-                    .background(.green.opacity(0.4))
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    .padding(.horizontal, 10)
-                    .multilineTextAlignment(.trailing)
-                
-                LazyVGrid(columns: gridItems) {
-                    ForEach(viewModel.keys, id: \.self) { key in
-                        Button {
-                            
-                            
-                            
-                            if key == Keys.beep {
-                                viewModel.isBeepOn.toggle()
-                            }
-                            
-                            if viewModel.isBeepOn {
-                                Task {
-                                    await playSound()
-                                }
-                            }
-                            
-                            viewModel.buttonClick(key: key)
-                            
-                         
-                            
-                        } label: {
-                            Text(key.rawValue)
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                                .fontDesign(.rounded)
-                                .padding(25)
-                                .foregroundStyle(.white)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .background(key.getBackground())
-                                .clipShape(Circle())
-                        }
+        NavigationStack {
+            ZStack {
+                VStack {
+                    ZStack {
+
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .fill(.green.opacity(0.4))
+                            .frame(height: 120)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
                         
+                        Text(viewModel.display)
+                            .font(.custom(K.customFontName, size: 70))
+                            .fontWeight(.black)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding(.trailing, 10)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                    
+                    
+                    LazyVGrid(columns: gridItems) {
+                        ForEach(viewModel.keys, id: \.self) { key in
+                            Button {
+                                viewModel.buttonClick(key: key)
+                            } label: {
+                                Text(key.rawValue)
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                    .fontDesign(.rounded)
+                                    .padding(25)
+                                    .foregroundStyle(.white)
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .background(key.getBackground())
+                                    .clipShape(Circle())
+                            }
+                            
+                        }
                     }
                 }
             }
+            .navigationTitle(K.appName)
+            .padding(.horizontal)
         }
     }
     
-    func playSound() async {
-            guard let soundURL = Bundle.main.url(forResource: "beep", withExtension: "mp3") else {
-                print("Sound file not found")
-                return
-            }
 
-            do {
-                viewModel.audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-                viewModel.audioPlayer?.play()
-            } catch {
-                print("Error playing sound: \(error.localizedDescription)")
-            }
-        }
 }
-
-// Sound Effect by <a href="https://pixabay.com/users/edr-1177074/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=8333">EdR</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=8333">Pixabay</a>
 
 #Preview {
     CalculatorView()
