@@ -20,6 +20,8 @@
 		5AF0FB842B144D0B00E235A0 /* NumberFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB832B144D0B00E235A0 /* NumberFormat.swift */; };
 		5AF0FB882B1545F700E235A0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB872B1545F700E235A0 /* AudioPlayer.swift */; };
 		5AF0FB8C2B1552D300E235A0 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB8B2B1552D300E235A0 /* Operation.swift */; };
+		5AF0FB8E2B15A0C700E235A0 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB8D2B15A0C700E235A0 /* DisplayView.swift */; };
+		5AF0FB902B15A73700E235A0 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB8F2B15A73700E235A0 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5AF0FB832B144D0B00E235A0 /* NumberFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormat.swift; sourceTree = "<group>"; };
 		5AF0FB872B1545F700E235A0 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		5AF0FB8B2B1552D300E235A0 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		5AF0FB8D2B15A0C700E235A0 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		5AF0FB8F2B15A73700E235A0 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				5AA87BEE2B122FA300401B02 /* CalculatorView.swift */,
+				5AF0FB8D2B15A0C700E235A0 /* DisplayView.swift */,
+				5AF0FB8F2B15A73700E235A0 /* KeyboardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 				5AA87BEF2B122FA300401B02 /* CalculatorView.swift in Sources */,
 				5AF0FB842B144D0B00E235A0 /* NumberFormat.swift in Sources */,
 				5AF0FB882B1545F700E235A0 /* AudioPlayer.swift in Sources */,
+				5AF0FB8E2B15A0C700E235A0 /* DisplayView.swift in Sources */,
+				5AF0FB902B15A73700E235A0 /* KeyboardView.swift in Sources */,
 				5AA87BFE2B12383100401B02 /* Keys.swift in Sources */,
 				5AF0FB7F2B144BFF00E235A0 /* Calc.swift in Sources */,
 				5AF0FB8C2B1552D300E235A0 /* Operation.swift in Sources */,

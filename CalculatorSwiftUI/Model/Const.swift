@@ -24,6 +24,22 @@ struct Const {
     //Display font
     static let customFontName = "Calculator"
     
+    //AppStorage Keys
+    static let isBeepOnKey = "isBeepOn"
+    static let displayKey = "display"
+    
+    //Dimens
+    static let defaultRadius = 25.0
+    
+    //Visor
+    static let displayOpacity = 0.4
+    static let displayHeight = 120.0
+    static let displayFontSize = 70.0
+    static let displayPadding = 10.0
+    
+    //Keys
+    static let keyPadding = 25.0
+    
     
     // Sound Effect by <a href="https://pixabay.com/users/edr-1177074/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=8333">EdR</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=8333">Pixabay</a>
 }

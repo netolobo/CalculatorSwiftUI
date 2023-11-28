@@ -12,9 +12,13 @@ import SwiftUI
 @MainActor 
 class CalculatorViewModel : ObservableObject{
     @Published var keys = Keys.allCases
-    @AppStorage("display") var display = Const.zed
-    @AppStorage("isBeepOn")  var isBeepOn = true
+    @AppStorage(Const.displayKey) var displayValue = Const.zed
+    @AppStorage(Const.isBeepOnKey)  var isBeepOn = true
     @Published var audioPlayer : AVAudioPlayer?
+    
+    init() {
+        Task { audioPlayer = await AudioPlayer.playSound(audioName: Const.audioName, audioExtension: Const.audioExtension) }
+    }
     
     func buttonClick(key: Keys) {
         if key == Keys.beep {
@@ -22,17 +26,15 @@ class CalculatorViewModel : ObservableObject{
         }
         
         if isBeepOn {
-            Task {
-                await beep()
-                
-            }
+            beep()
         }
+        
         Calc.performButtonClick(key: key)
-        display = Calc.getDisplay()
+        displayValue = Calc.getDisplay()
     }
     
-    private func beep() async {
-        audioPlayer = await AudioPlayer.playSound(audioName: "beep", audioExtension: "mp3")
+    private func beep() {
+//        audioPlayer = await AudioPlayer.playSound(audioName: Const.audioName, audioExtension: Const.audioExtension)
         audioPlayer?.play()
     }
     

@@ -12,14 +12,14 @@ import SwiftUI
 enum Keys: String, CaseIterable {
     
     case c = "C"
-    case divide = "÷"
-    case percent = "%"
     case positiveNegative = "±"
+    case percent = "%"
+    case divide = "÷"
     
     case seven = "7"
     case eight = "8"
     case nive = "9"
-    case multiply = "X"
+    case multiply = "x"
     
     case four = "4"
     case five = "5"
