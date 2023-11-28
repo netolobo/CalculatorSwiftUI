@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+
 enum Keys: String, CaseIterable {
     
     case c = "C"
@@ -35,6 +36,7 @@ enum Keys: String, CaseIterable {
     case point = "."
     case equal = "="
     
+
     func getBackground() -> Color {
         switch self {
             

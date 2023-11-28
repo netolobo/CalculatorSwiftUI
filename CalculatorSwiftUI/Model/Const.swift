@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct K {
+struct Const {
     static let appName = "RetroCalc"
     
     //display
@@ -19,7 +19,7 @@ struct K {
     
     //audio
     static let audioExtension = "mp3"
-    static let audioName = "bee"
+    static let audioName = "beep"
 
     //Display font
     static let customFontName = "Calculator"

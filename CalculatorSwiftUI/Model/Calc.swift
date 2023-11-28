@@ -10,14 +10,14 @@ import Foundation
 struct Calc {
     private static var currentNumber: Double = 0
     private static var previousNumber: Double = 0
-    private static var display: String = K.zed
+    private static var display: String = Const.zed
     private static var previousOperation: Operation?
     private static var currentOperation: Operation?
     private static var stillTyping: Bool = true
     private static var divisionByZeroError = false
     
     static func basicOperation(_ operation: Operation) {
-        if display != K.error {
+        if display != Const.error {
             performOperation()
             updateCurrentOperation(operation)
             updatePreviousNumber(currentNumber)
@@ -55,7 +55,7 @@ struct Calc {
     
     private static func setScreenNumber(number: String) {
         var currentDisplayNumber = number
-        if display != K.zed && stillTyping && display != K.error {
+        if display != Const.zed && stillTyping && display != Const.error {
             currentDisplayNumber = display+number
         }
         if isValidInput(currentDisplayNumber) {
@@ -84,12 +84,12 @@ struct Calc {
     }
     
     private static func point() {
-        if !display.contains(K.dot) && display != K.error {
-            self.display += K.dot
+        if !display.contains(Const.dot) && display != Const.error {
+            self.display += Const.dot
             updateStillTyping(true)
         }
-        if display == K.error {
-            self.display = K.zed+K.dot
+        if display == Const.error {
+            self.display = Const.zed+Const.dot
             updateStillTyping(true)
         }
     }
@@ -120,7 +120,7 @@ struct Calc {
     
     
     private static func resetDisplay() {
-        self.display = K.zed
+        self.display = Const.zed
     }
     
     private static func performOperation() {
@@ -157,7 +157,7 @@ struct Calc {
                 updatePreviousOperation(tempPreviousOperation!)
                 updateDisplay("\(currentNumber)")
             } else {
-                display = K.error
+                display = Const.error
                 divisionByZeroError = false
             }
             resetCurrentOperation()

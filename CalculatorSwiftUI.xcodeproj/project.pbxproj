@@ -16,7 +16,7 @@
 		5AF0FB782B14381F00E235A0 /* Calculator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AF0FB772B14381F00E235A0 /* Calculator.ttf */; };
 		5AF0FB7D2B1441C600E235A0 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AF0FB7C2B1441C600E235A0 /* beep.mp3 */; };
 		5AF0FB7F2B144BFF00E235A0 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB7E2B144BFE00E235A0 /* Calc.swift */; };
-		5AF0FB812B144C6D00E235A0 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB802B144C6D00E235A0 /* K.swift */; };
+		5AF0FB812B144C6D00E235A0 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB802B144C6D00E235A0 /* Const.swift */; };
 		5AF0FB842B144D0B00E235A0 /* NumberFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB832B144D0B00E235A0 /* NumberFormat.swift */; };
 		5AF0FB882B1545F700E235A0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB872B1545F700E235A0 /* AudioPlayer.swift */; };
 		5AF0FB8C2B1552D300E235A0 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0FB8B2B1552D300E235A0 /* Operation.swift */; };
@@ -34,7 +34,7 @@
 		5AF0FB792B14385300E235A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5AF0FB7C2B1441C600E235A0 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		5AF0FB7E2B144BFE00E235A0 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
-		5AF0FB802B144C6D00E235A0 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		5AF0FB802B144C6D00E235A0 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		5AF0FB832B144D0B00E235A0 /* NumberFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormat.swift; sourceTree = "<group>"; };
 		5AF0FB872B1545F700E235A0 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		5AF0FB8B2B1552D300E235A0 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		5AA87BFB2B1237C200401B02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5AF0FB802B144C6D00E235A0 /* K.swift */,
+				5AF0FB802B144C6D00E235A0 /* Const.swift */,
 				5AA87BFD2B12383100401B02 /* Keys.swift */,
 				5AF0FB7E2B144BFE00E235A0 /* Calc.swift */,
 				5AF0FB872B1545F700E235A0 /* AudioPlayer.swift */,
@@ -206,7 +206,7 @@
 				5AA87BFE2B12383100401B02 /* Keys.swift in Sources */,
 				5AF0FB7F2B144BFF00E235A0 /* Calc.swift in Sources */,
 				5AF0FB8C2B1552D300E235A0 /* Operation.swift in Sources */,
-				5AF0FB812B144C6D00E235A0 /* K.swift in Sources */,
+				5AF0FB812B144C6D00E235A0 /* Const.swift in Sources */,
 				5AA87C002B12426200401B02 /* CalculatorViewModel.swift in Sources */,
 				5AA87BED2B122FA300401B02 /* CalculatorSwiftUIApp.swift in Sources */,
 			);

@@ -7,13 +7,14 @@
 
 import Foundation
 import AVFAudio
+import SwiftUI
 
-@Observable
-class CalculatorViewModel {
-    var keys = Keys.allCases
-    var display = K.zed
-    var isBeepOn = true
-    var audioPlayer : AVAudioPlayer?
+@MainActor 
+class CalculatorViewModel : ObservableObject{
+    @Published var keys = Keys.allCases
+    @AppStorage("display") var display = Const.zed
+    @AppStorage("isBeepOn")  var isBeepOn = true
+    @Published var audioPlayer : AVAudioPlayer?
     
     func buttonClick(key: Keys) {
         if key == Keys.beep {
@@ -22,10 +23,6 @@ class CalculatorViewModel {
         
         if isBeepOn {
             Task {
-//                await AudioPlayer.play(audioName: "beep", audioExtension:"mp3")
-//                await audioPlayer?.playSound(audioName:"beep", audioExtension:"mp3")
-//                audioPlayer = await playSound(audioName:"beep", audioExtension:"mp3")
-//                audioPlayer?.play()
                 await beep()
                 
             }

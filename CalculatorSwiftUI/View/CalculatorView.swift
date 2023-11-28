@@ -9,7 +9,8 @@ import SwiftUI
 import AVFAudio
 
 struct CalculatorView: View {
-    @State var viewModel = CalculatorViewModel()
+    @StateObject private var viewModel = CalculatorViewModel()
+    
     
     let gridItems = [
            GridItem(.flexible()),
@@ -30,7 +31,7 @@ struct CalculatorView: View {
                             .frame(maxWidth: .infinity, alignment: .trailing)
                         
                         Text(viewModel.display)
-                            .font(.custom(K.customFontName, size: 70))
+                            .font(.custom(Const.customFontName, size: 70))
                             .fontWeight(.black)
                             .frame(maxWidth: .infinity, alignment: .trailing)
                             .padding(.trailing, 10)
@@ -58,7 +59,7 @@ struct CalculatorView: View {
                     }
                 }
             }
-            .navigationTitle(K.appName)
+            .navigationTitle(Const.appName)
             .padding(.horizontal)
         }
     }

@@ -9,8 +9,8 @@ import Foundation
 
 private func formatNumber(_ number: String) -> String {
     let formatter = NumberFormatter()
-    formatter.maximumFractionDigits = K.maximumDecimalDigits
-    formatter.decimalSeparator = K.dot
+    formatter.maximumFractionDigits = Const.maximumDecimalDigits
+    formatter.decimalSeparator = Const.dot
     
     if let numberValue = Double(number) {
         if let formattedString = formatter.string(from: NSNumber(value: numberValue)) {
@@ -30,11 +30,11 @@ func formatLargeNumber(_ input: String) -> String {
 }
 
 func isValidInput(_ input: String) -> Bool{
-    if input.contains(K.dot) && input.count > 10{
+    if input.contains(Const.dot) && input.count > 10{
         return false
     }
     
-    if !input.contains(K.dot) && input.count > 9 {
+    if !input.contains(Const.dot) && input.count > 9 {
         return false
     }
     return true
