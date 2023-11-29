@@ -17,12 +17,13 @@ struct Const {
     static let maximumDecimalDigits = 10
 
     
-    //audio
+    //Sound effect
     static let audioExtension = "mp3"
     static let audioName = "beep"
 
-    //Display font
-    static let customFontName = "Calculator"
+    //Fonts
+    static let displayFontName = "Calculator"
+    static let appFontName = "Retrolight"
     
     //AppStorage Keys
     static let isBeepOnKey = "isBeepOn"
@@ -30,6 +31,7 @@ struct Const {
     
     //Dimens
     static let defaultRadius = 25.0
+    static let navigationTitleFontSize = 34.0
     
     //Visor
     static let displayOpacity = 0.4

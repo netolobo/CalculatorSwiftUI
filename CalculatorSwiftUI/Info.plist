@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Retrolight.ttf</string>
 		<string>Calculator.ttf</string>
 	</array>
 </dict>

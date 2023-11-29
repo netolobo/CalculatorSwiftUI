@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A726E202B16CC7A007A4E46 /* Retrolight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A726E1F2B16CC7A007A4E46 /* Retrolight.ttf */; };
 		5AA87BED2B122FA300401B02 /* CalculatorSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA87BEC2B122FA300401B02 /* CalculatorSwiftUIApp.swift */; };
 		5AA87BEF2B122FA300401B02 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA87BEE2B122FA300401B02 /* CalculatorView.swift */; };
 		5AA87BF12B122FA600401B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA87BF02B122FA600401B02 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A726E1F2B16CC7A007A4E46 /* Retrolight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Retrolight.ttf; sourceTree = "<group>"; };
 		5AA87BE92B122FA300401B02 /* CalculatorSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA87BEC2B122FA300401B02 /* CalculatorSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorSwiftUIApp.swift; sourceTree = "<group>"; };
 		5AA87BEE2B122FA300401B02 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				5AF0FB7C2B1441C600E235A0 /* beep.mp3 */,
 				5AF0FB792B14385300E235A0 /* Info.plist */,
+				5A726E1F2B16CC7A007A4E46 /* Retrolight.ttf */,
 				5AF0FB772B14381F00E235A0 /* Calculator.ttf */,
 				5AA87BEC2B122FA300401B02 /* CalculatorSwiftUIApp.swift */,
 				5AA87BFB2B1237C200401B02 /* Model */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A726E202B16CC7A007A4E46 /* Retrolight.ttf in Resources */,
 				5AF0FB7D2B1441C600E235A0 /* beep.mp3 in Resources */,
 				5AF0FB782B14381F00E235A0 /* Calculator.ttf in Resources */,
 				5AA87BF42B122FA600401B02 /* Preview Assets.xcassets in Resources */,

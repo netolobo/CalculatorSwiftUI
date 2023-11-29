@@ -18,7 +18,7 @@ struct DisplayView: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
             
             Text(displayValue)
-                .font(.custom(Const.customFontName, size: Const.displayFontSize))
+                .font(.custom(Const.displayFontName, size: Const.displayFontSize))
                 .fontWeight(.black)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.trailing, Const.displayPadding)

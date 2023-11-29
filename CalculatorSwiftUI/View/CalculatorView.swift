@@ -22,7 +22,12 @@ struct CalculatorView: View {
                     }
                 }
             }
-            .navigationTitle(Const.appName)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text(Const.appName)
+                        .font(.custom(Const.appFontName, size: Const.navigationTitleFontSize))
+                }
+            }
             .padding(.horizontal)
         }
     }
