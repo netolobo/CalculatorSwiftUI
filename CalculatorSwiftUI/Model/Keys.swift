@@ -41,7 +41,7 @@ enum Keys: String, CaseIterable {
         switch self {
             
         case .beep:
-            return .cyan
+            return .purple
             
         case .c:
                 return .orange

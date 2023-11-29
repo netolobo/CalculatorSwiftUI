@@ -18,7 +18,9 @@ struct CalculatorView: View {
                     DisplayView(displayValue: viewModel.displayValue)
                     
                     KeyboardView(keys: viewModel.keys) { key in
-                        viewModel.buttonClick(key: key)
+                        withAnimation {
+                            viewModel.buttonClick(key: key)
+                        }
                     }
                 }
             }
