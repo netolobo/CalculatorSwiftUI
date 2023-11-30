@@ -10,4 +10,5 @@ https://github.com/netolobo/CalculatorSwiftUI/assets/641469/602af1a2-e23e-4429-b
 - MVVM
 - SwiftUI
 - Animations
-- App Storage
+- AppStorage
+- AVFAudio
