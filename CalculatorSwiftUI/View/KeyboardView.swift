@@ -30,7 +30,7 @@ struct KeyboardView: View {
                         .padding(Const.keyPadding)
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(key.getBackground())
+                        .background(key.background)
                         .clipShape(RoundedRectangle(cornerRadius: Const.defaultRadius))
                 }
             }

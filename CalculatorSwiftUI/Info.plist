@@ -7,5 +7,7 @@
 		<string>Retrolight.ttf</string>
 		<string>Calculator.ttf</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
 </dict>
 </plist>

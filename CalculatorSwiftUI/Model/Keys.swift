@@ -37,7 +37,7 @@ enum Keys: String, CaseIterable {
     case equal = "="
     
 
-    func getBackground() -> Color {
+    var background : Color {
         switch self {
             
         case .beep:
