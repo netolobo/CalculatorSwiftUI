@@ -34,7 +34,6 @@ class CalculatorViewModel : ObservableObject{
     }
     
     private func beep() {
-//        audioPlayer = await AudioPlayer.playSound(audioName: Const.audioName, audioExtension: Const.audioExtension)
         audioPlayer?.play()
     }
     
