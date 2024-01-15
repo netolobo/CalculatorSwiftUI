@@ -1,5 +1,5 @@
 # CalculatorSwiftUI
-A simply calculator built using SwiftUI
+A College project of a Calculator built using SwiftUI and MVVM Architecture.
 
 https://github.com/netolobo/CalculatorSwiftUI/assets/641469/dff522a2-b88b-4170-b7e1-70d1004d70fe
 
